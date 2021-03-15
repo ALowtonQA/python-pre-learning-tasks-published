@@ -13,6 +13,8 @@ def list_to_str(list1):
     return "".join(string_list)
     
 def convert_to_binary(dec):
+    if dec == 0:
+            return 0
     binary = []
     while dec > 0:
         binary.append(dec % 2)
